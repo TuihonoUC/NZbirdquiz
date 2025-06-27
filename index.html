@@ -513,5 +513,12 @@
       window.scrollTo(0, 0);
     }
   </script>
+  <script>
+  window.addEventListener("load", () => {
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 500); // Delay to ensure iframe load doesn't override scroll
+  });
+</script>
 </body>
 </html>
